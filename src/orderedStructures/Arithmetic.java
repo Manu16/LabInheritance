@@ -29,4 +29,10 @@ public class Arithmetic extends Progression {
     {
         return "Arith("+(int)firstValue()+","+(int)commonDifference+")";
     }
+	public double getCommonFactor()
+	{
+	    return commonDifference;
+	}
+	
+	
 }

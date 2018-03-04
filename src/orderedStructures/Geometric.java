@@ -1,10 +1,12 @@
 package orderedStructures;
 
-public class Geometric extends Progression {
+public class Geometric extends Progression 
+{
 
 	private double commonFactor; 
 	
-	public Geometric(double firstValue, double commonFactor) { 
+	public Geometric(double firstValue, double commonFactor) 
+	{ 
 		super(firstValue); 
 		this.commonFactor = commonFactor; 
 	}
@@ -28,5 +30,9 @@ public class Geometric extends Progression {
     public String toString()
     {
         return "Geom("+(int)firstValue()+","+(int)commonFactor+")";
+    }
+    public double getCommonFactor()
+    {
+    	return commonFactor;
     }
 }

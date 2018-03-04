@@ -43,5 +43,21 @@ public abstract class Progression implements OrderedNumberStructure {
 		return value; 
 	}
 	
-	public abstract double nextValue(); 
+	public abstract double nextValue();
+
+	public boolean equalsTo(Progression p)
+	{
+		if(this.getTerm(1)==p.getTerm(1)&&this.getTerm(5)==p.getTerm(5))
+		{
+			return true;
+		}
+		return false;
+	}
+	public Progression add(Progression other)
+	{
+		double newFirstValue = this.firstValue() + other.firstValue();
+		double newCommonDifference = (this.getTerm(2)-this.firstValue())+(other.getTerm(2)-other.firstValue());
+		Progression newArithProg = new Arithmetic(newFirstValue, newCommonDifference);
+		return newArithProg ;
+	}
 }

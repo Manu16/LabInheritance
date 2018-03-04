@@ -31,5 +31,9 @@ public class Fibonacci extends Progression {
     {
         return "Fibbonaci sequence";
     }
+	public boolean equalsTo(Progression p)
+	{
+		return false;
+	}
 
 }

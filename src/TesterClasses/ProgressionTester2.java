@@ -39,5 +39,6 @@ public class ProgressionTester2 {
 	        }		    
 		System.out.println("Sum of first " + n + " terms in " + p + " is: " + sum); 
 	}
+	 
 
 }
